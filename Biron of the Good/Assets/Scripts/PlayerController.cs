@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     public Vector2 Sneak_Speed;
     public Vector2 Sprint_Speed;
 
-    private bool isGrounded = false;
+    private bool isGrounded;
+    private bool itemNearby;
     
     void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
  
     void Update()
     {
+        // Insert animation for each movement
         Walk();
         Sneak();
         Sprint();
@@ -80,5 +82,16 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = false;
         }
+
+        if (collision.collider.tag == "Item")
+        {
+            itemNearby = true;
+        }
+        else
+        {
+            itemNearby = false;
+        }
     }
+
+    
 }

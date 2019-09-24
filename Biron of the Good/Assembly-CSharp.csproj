@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/user/Desktop/Meine Spiele/Unity Projects/103-Adventure-Game-Jam/Biron of the Good/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
